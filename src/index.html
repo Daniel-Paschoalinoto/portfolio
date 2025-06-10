@@ -1,154 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <title>Daniel Paschoalinoto | Dev</title>
 
-  <title>Daniel Paschoalinoto | Dev</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="styles.scss" />
-  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <body>
+    <div id="top"></div>
 
-</head>
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Olá, meu nome é
+          <span class="text-color-main">Daniel Paschoalinoto</span>
+          <br />
+          Sou dev Node.js
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Saiba mais</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
 
-<body>
-  <div id="top"></div>
-
-  <!-- **** Hero Section **** -->
-  <section id="hero" class="jumbotron">
-    <div class="container">
-      <h1 class="hero-title load-hidden">
-        Olá, meu nome é <span class="text-color-main">Daniel Paschoalinoto</span>
-        <br />
-        Sou dev Node.js
-      </h1>
-      <p class="hero-cta load-hidden">
-        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Saiba mais</a>
-      </p>
-    </div>
-  </section>
-  <!-- /END Hero Section -->
-
-  <!-- **** About Section **** -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title load-hidden">Sobre mim</h2>
-      <div class="row about-wrapper">
-        <div class="col-md-6 col-sm-12">
-          <div class="about-wrapper__image load-hidden">
-            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
-              src="assets/profile.jpg" alt="Profile Image" />
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">Sobre mim</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="about-wrapper__info load-hidden">
-            <p class="about-wrapper__info-text">
-
-            </p>
-            <p class="about-wrapper__info-text">
-              Bem vindo!😁 Pode me chamar de Dani, sou Marido, Pai de 2 (e 1 gato) e Desenvolvedor Node.js com experiência em JavaScript/Node, GitHub/Azure, Vue 3, Puppeteer e conhecimentos em SQL,
-              Python/Django, GCP, entre outras tecnologias.<br>
-              Criei diversas automações e interfaces internas para o site <a href="https://empregos.com.br" target="_blank">Empregos</a>, que foi
-              minha primeira oportunidade como desenvolvedor.<br>
-              Sou apaixonado por programação e tenho uma rotina efetiva de estudos, buscando sempre aprimorar minhas habilidades.<br>
-              Encontrei na área a oportunidade de aplicar minhas melhores características — como facilidade em identificar padrões,
-              organização, planejamento e uma grande paixão por resolver problemas/puzzles.
-            </p>
-            <span class="d-flex mt-3">
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="assets/resume.pdf">
-                Ver currículo
-              </a>
-            </span>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text"></p>
+              <p class="about-wrapper__info-text">
+                Olá! 😊 Pode me chamar de Dani. Sou marido, pai de dois filhos
+                (e de um gato), além de desenvolvedor Node.js com experiência em
+                JavaScript/Node, GitHub/Azure, Vue 3, Puppeteer e conhecimentos
+                em SQL, Python/Django e GCP.<br />
+                Minha primeira oportunidade como dev foi no site
+                <a
+                  href="https://empregos.com.br"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Empregos</a
+                >, onde criei automações e interfaces internas que facilitaram
+                processos.<br />
+                Sou apaixonado por programação e tenho uma rotina constante de
+                estudos para aprimorar minhas habilidades.<br />
+                Na área, encontrei a chance de usar minhas principais
+                qualidades: identificação de padrões, organização, planejamento
+                e uma paixão genuína por resolver problemas e desafios
+                complexos.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/curriculo.pdf"
+                >
+                  Ver currículo
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- /END About Section -->
+    </section>
+    <!-- /END About Section -->
 
-  <!-- **** Projects Section **** -->
-  <section id="projects">
-    <div class="container">
-      <div class="project-wrapper">
-        <h2 class="section-title dark-blue-text">Projetos</h2>
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projetos</h2>
 
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Mapas com Xpaths em Vue 3</h3>
-              <div>
-                <p class="mb-4">
-                  Esse app foi minha primeira experiência com o Vue, ele é um refactor de uma aplicação feita em HTML/CSS/JS vanilla.<br>
-                  Seu objetivo é organizar dados importantes e facilitar operações frequentes no meu dia a dia.<br>
-                  Usei Vue 3, Vite e Tailwind.<br>
-                  O design foi baseado no feedback e nas necessidades dos meus colegas de equipe.
-                </p>
-              </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://daniel-paschoalinoto.github.io/app-mapas/">
-                Ver Build
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/Daniel-Paschoalinoto/app-mapas">
-                Repositório
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://daniel-paschoalinoto.github.io/app-mapas/" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/project.png" />
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Mapas com Xpaths</h3>
+                <div>
+                  <p class="mb-4">
+                    <strong>Tecnologias: Vue3 + Vite + Tailwind</strong><br />
+                    Esse app foi minha primeira experiência com Vue. Ele é um
+                    refatoramento de uma aplicação desenvolvida com HTML, CSS e
+                    JavaScript puro.
+                  </p>
+                  <p class="mb-4">
+                    Seu objetivo é organizar informações importantes e facilitar
+                    operações recorrentes do meu dia a dia.
+                  </p>
+                  <p class="mb-4">
+                    O design foi desenvolvido com base no feedback e nas
+                    necessidades dos meus colegas de equipe.
+                  </p>
                 </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-
-        <!-- Notice: each .row is a project -->
-        <!-- <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Project Title 1</h3>
-              <div>
-                <p class="mb-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Excepturi neque, ipsa animi maiores repellendus distinctio
-                  aperiam earum dolor voluptatum consequatur blanditiis
-                  inventore debitis fuga numquam voluptate ex architecto
-                  itaque molestiae.
-                </p>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://daniel-paschoalinoto.github.io/app-mapas/"
+                >
+                  Ver Build
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Daniel-Paschoalinoto/app-mapas"
+                >
+                  Repositório
+                </a>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
-                Source Code
-              </a>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://daniel-paschoalinoto.github.io/app-mapas/"
+                  target="_blank"
+                >
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project0.png"
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="#!" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/project.jpg" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div> -->
-        <!-- /END Project -->
+          <!-- /END Project -->
 
-        <!-- Notice: each .row is a project -->
-        <!-- <div class="row">
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">MonsterFriends</h3>
+                <div>
+                  <p class="mb-4">
+                    <strong>Tecnologias: React + Vite</strong><br />
+                    Esta aplicação foi desenvolvida como parte de um projeto da
+                    escola canadense ZTM, onde tive a oportunidade de aprimorar
+                    meus conhecimentos em React e Vite.
+                  </p>
+                  <p class="mb-4">
+                    Os nomes são consumidos de uma API externa, e a aplicação é
+                    totalmente responsiva.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://daniel-paschoalinoto.github.io/monsterfriends/"
+                >
+                  Ver Build
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Daniel-Paschoalinoto/monsterfriends"
+                >
+                  Repositório
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://daniel-paschoalinoto.github.io/monsterfriends/"
+                  target="_blank"
+                >
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project1.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <!-- <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Project Title 2</h3>
@@ -180,52 +262,75 @@
             </div>
           </div>
         </div> -->
-        <!-- /END Project -->
+          <!-- /END Project -->
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- /END Projects Section -->
+    </section>
+    <!-- /END Projects Section -->
 
-  <!-- **** Contact Section **** -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contato</h2>
-      <div class="contact-wrapper load-hidden">
-        <a class="cta-btn cta-btn--resume" href="https://wa.me/5511985117332" target="_blank">WhatsApp</a><br><br>
-        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:danielpaschoalinoto@gmail.com">E-mail</a>
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-wrapper load-hidden">
+          <a
+            class="cta-btn cta-btn--resume"
+            href="https://wa.me/5511985117332"
+            target="_blank"
+            >WhatsApp</a
+          ><br /><br />
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:danielpaschoalinoto@gmail.com"
+            >E-mail</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- /END Contact Section -->
+    </section>
+    <!-- /END Contact Section -->
 
-  <!-- **** Footer Section **** -->
-  <footer class="footer navbar-static-bottom">
-    <div class="container">
-      <a rel="noreferrer" href="#top" class="back-to-top">
-        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-      </a>
-      <div class="social-links">
-        <a rel="noreferrer" href="https://www.linkedin.com/in/daniel-paschoalinoto-592b9b21b/" target="_blank">
-          <i class="fa fa-linkedin fa-inverse"></i>
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
-        <a rel="noreferrer" href="https://github.com/Daniel-Paschoalinoto" target="_blank">
-          <i class="fa fa-github fa-inverse"></i>
-        </a>
+        <div class="social-links">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/daniel-paschoalinoto-592b9b21b/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://github.com/Daniel-Paschoalinoto"
+            target="_blank"
+          >
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <p class="footer__text">
+          © 2025 - Desenvolvido por
+          <a
+            rel="noreferrer"
+            href="https://github.com/Daniel-Paschoalinoto"
+            target="_blank"
+            >Daniel Paschoalinoto</a
+          >
+        </p>
       </div>
+    </footer>
+    <!-- /END Footer Section -->
 
-      <hr />
-
-      <p class="footer__text">
-        © 2025 - Desenvolvido por
-        <a rel="noreferrer" href="https://github.com/Daniel-Paschoalinoto" target="_blank">Daniel Paschoalinoto</a>
-      </p>
-    </div>
-  </footer>
-  <!-- /END Footer Section -->
-
-  <script defer type="module" src="index.js"></script>
-</body>
-
+    <script defer type="module" src="index.js"></script>
+  </body>
 </html>
 <!--
   Hello!

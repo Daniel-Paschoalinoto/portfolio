@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="styles.scss" />
   <script defer type="module" src="index.js"></script>
 </head>
@@ -34,7 +34,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="brand">Daniel P.</a>
+      <a href="#top" class="brand">Daniel Paschoalinoto</a>
       <nav aria-label="Principal">
         <ul class="nav-list">
           <li><a href="#about">Sobre</a></li>
@@ -49,19 +49,23 @@
   <main id="main">
     <!-- Hero -->
     <section id="top" class="hero">
-      <div class="container">
-        <p class="eyebrow reveal">Olá, meu nome é</p>
-        <h1 class="hero-title reveal">Daniel Paschoalinoto</h1>
-        <p class="hero-subtitle reveal">
-          Levo ideias até o lançamento. Criei o <strong>Podengo</strong>, um monitor de preços para Windows já validado
-          com dados reais, e desenvolvo com <strong>Node.js</strong> e <strong>Vue</strong>, com IA como parceira de
-          código.
-        </p>
-        <div class="hero-actions reveal">
-          <a class="btn btn--primary" href="#projects">Ver projetos</a>
-          <a class="btn btn--ghost" href="assets/curriculo.pdf" target="_blank" rel="noopener">Currículo (PDF)</a>
-          <a class="btn btn--ghost" href="#contact">Falar comigo</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Olá, meu nome é</p>
+          <h1 class="hero-title reveal">Daniel Paschoalinoto</h1>
+          <p class="hero-subtitle reveal">
+            Levo ideias até o lançamento. Criador do <strong>Podengo</strong>, monitor de preços para Windows, com
+            Node.js, Vue e IA como parceira.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn--primary" href="#projects">Ver projetos</a>
+            <a class="btn btn--ghost" href="assets/curriculo.pdf" target="_blank" rel="noopener">Currículo</a>
+          </div>
         </div>
+        <figure class="hero-visual">
+          <img src="assets/podengo-hero.webp" width="960" height="533" fetchpriority="high" decoding="async"
+            alt="Painel do Podengo com anúncios, oportunidades e lojas monitoradas (dados de exemplo)" />
+        </figure>
       </div>
     </section>
 
@@ -87,7 +91,7 @@
             por desafios complexos.
           </p>
           <p class="about-personal">
-            Pode me chamar de Dani. Sou marido, pai de dois filhos e de um gato. 😊
+            Pode me chamar de Dani. Sou marido, pai de dois filhos e de um gato.
           </p>
         </div>
       </div>
@@ -162,8 +166,8 @@
                 decoding="async" />
             </a>
             <div class="card-body">
-              <p class="badge">Produto próprio · em lançamento</p>
-              <h3 class="card-title">Podengo — Monitor de Preços para Windows</h3>
+              <p class="badge">Produto próprio, em lançamento</p>
+              <h3 class="card-title">Podengo: Monitor de Preços para Windows</h3>
               <ul class="chips chips--small">
                 <li>Python</li>
                 <li>Painel web</li>
@@ -203,7 +207,7 @@
               <span>IA local</span>
             </div>
             <div class="card-body">
-              <p class="badge">IA · projeto pessoal</p>
+              <p class="badge">IA, projeto pessoal</p>
               <h3 class="card-title">Agente de IA local e experimento medido</h3>
               <ul class="chips chips--small">
                 <li>Node.js</li>

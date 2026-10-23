@@ -59,7 +59,7 @@
           <div class="hero-actions reveal">
             <a class="btn btn--primary" href="#projects">Ver projetos</a>
             <a class="btn btn--ghost" href="https://apps.microsoft.com/detail/9PKTB56BTFTG?hl=pt-BR&amp;gl=BR"
-              target="_blank" rel="noopener">Baixar o Podengo</a>
+              data-baixar="9PKTB56BTFTG" target="_blank" rel="noopener">Baixar o Podengo</a>
             <a class="btn btn--ghost" href="assets/curriculo.pdf" target="_blank" rel="noopener">Currículo</a>
           </div>
         </div>
@@ -196,8 +196,8 @@
               </p>
               <div class="card-actions">
                 <a class="btn btn--primary btn--small"
-                  href="https://apps.microsoft.com/detail/9PKTB56BTFTG?hl=pt-BR&amp;gl=BR" target="_blank"
-                  rel="noopener">Baixar na Microsoft Store</a>
+                  href="https://apps.microsoft.com/detail/9PKTB56BTFTG?hl=pt-BR&amp;gl=BR" data-baixar="9PKTB56BTFTG"
+                  target="_blank" rel="noopener">Baixar na Microsoft Store</a>
                 <a class="btn btn--ghost btn--small" href="https://podengo.com.br" target="_blank"
                   rel="noopener">Ver site</a>
               </div>
@@ -233,35 +233,40 @@
           </article>
 
           <article class="card reveal">
-            <a class="card-media" href="https://daniel-paschoalinoto.github.io/eco-fragmento-do-amanha/"
-              target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-              <img src="assets/eco-fragmento-do-amanha.webp" width="1200" height="900"
-                alt="Tela do jogo ECO - Fragmento do Amanhã, rodando em um terminal" loading="lazy" decoding="async" />
+            <a class="card-media" href="https://playeco.com.br/" target="_blank" rel="noopener" tabindex="-1"
+              aria-hidden="true">
+              <img src="assets/eco-fragmento-do-amanha.webp" width="1920" height="1200"
+                alt="Tela inicial do jogo ECO - Fragmento do Amanhã no navegador, com o logotipo à esquerda e o menu em um terminal à direita"
+                loading="lazy" decoding="async" />
             </a>
             <div class="card-body">
-              <p class="badge">Projeto pessoal</p>
+              <p class="badge">Projeto pessoal, refeito para a web</p>
               <h3 class="card-title">ECO - Fragmento do Amanhã</h3>
               <ul class="chips chips--small">
-                <li>Node.js</li>
-                <li>PowerShell</li>
-                <li>Windows Terminal</li>
+                <li>JavaScript</li>
+                <li>Web Audio</li>
+                <li>Cloudflare Workers</li>
+                <li>GitHub Actions</li>
               </ul>
               <p>
-                Jogo narrativo para Windows que usa Node.js e PowerShell para manipular o terminal e criar uma
-                experiência imersiva em interface de texto. A história trata de inteligência artificial, controle neural
-                e utopias futuristas.
+                Jogo narrativo de terminal sobre inteligência artificial e controle neural. Roda direto no navegador,
+                em português e inglês, e está no ar em playeco.com.br.
               </p>
               <p>
-                Fui da ideia à entrega: enredo, mecânicas, engine, testes e edição de vídeo e áudio. Publicado na versão
-                1.0.1, com instalador para Windows (Inno Setup), licença Creative Commons e site com vídeo de instalação.
+                <strong>Como era:</strong> a versão 1.0.1 eu levei da ideia à entrega (enredo, mecânicas, engine, testes, vídeo e
+                áudio) em Node.js e PowerShell, só para Windows, com instalador (Inno Setup) e vídeo de instalação.
+                Funcionava, mas antivírus marcavam o jogo como possível aplicativo indesejado.
+              </p>
+              <p>
+                <strong>Como ficou:</strong> refiz do zero para o navegador. Não instala nada nem mexe no computador de
+                quem joga, e cada push publica o jogo no Cloudflare Workers, depois de checagens automáticas.
+              </p>
+              <p class="card-note">
+                A reescrita foi feita com apoio de IA (Claude Code), sob a minha direção e validação.
               </p>
               <div class="card-actions">
-                <a class="btn btn--primary btn--small"
-                  href="https://daniel-paschoalinoto.github.io/eco-fragmento-do-amanha/" target="_blank"
-                  rel="noopener">Ver site</a>
-                <a class="btn btn--ghost btn--small"
-                  href="https://github.com/Daniel-Paschoalinoto/eco-fragmento-do-amanha" target="_blank"
-                  rel="noopener">Código</a>
+                <a class="btn btn--primary btn--small" href="https://playeco.com.br/" target="_blank"
+                  rel="noopener">Jogar agora</a>
               </div>
             </div>
           </article>

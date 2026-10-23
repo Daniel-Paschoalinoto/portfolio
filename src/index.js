@@ -1,3 +1,13 @@
+// Podengo: no Windows o botão abre direto o app da Microsoft Store (ms-windows-store), como no site do
+// Podengo. Em outros aparelhos continua o link web da loja. O target some, senão fica uma aba em branco.
+if (/Windows NT 10/.test(navigator.userAgent || "")) {
+  document.querySelectorAll("a[data-baixar]").forEach((a) => {
+    a.href = `ms-windows-store://pdp/?productid=${a.dataset.baixar}`;
+    a.removeAttribute("target");
+    a.removeAttribute("rel");
+  });
+}
+
 // Botão "Copiar" do e-mail (mailto só funciona com app de e-mail padrão).
 document.querySelectorAll("[data-copy]").forEach((btn) => {
   btn.addEventListener("click", async () => {

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "2.0.0",
   "private": true,
-  "description": "Portfólio de Daniel Paschoalinoto, desenvolvedor Node.js e Vue.",
+  "description": "Portfólio de Daniel Paschoalinoto, desenvolvedor Full Stack.",
   "scripts": {
     "start": "parcel src/index.html src/podengo.html",
     "build": "parcel build src/index.html src/podengo.html --no-source-maps",

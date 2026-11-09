@@ -3,11 +3,10 @@
   "version": "2.0.0",
   "private": true,
   "description": "Portfólio de Daniel Paschoalinoto, desenvolvedor Node.js e Vue.",
-  "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build --no-source-maps",
-    "gh-pages-build": "parcel build --no-source-maps --public-url https://daniel-paschoalinoto.github.io/portfolio/"
+    "start": "parcel src/index.html src/podengo.html",
+    "build": "parcel build src/index.html src/podengo.html --no-source-maps",
+    "gh-pages-build": "parcel build src/index.html src/podengo.html --no-source-maps --public-url https://daniel-paschoalinoto.github.io/portfolio/"
   },
   "repository": {
     "type": "git",

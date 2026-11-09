@@ -66,7 +66,7 @@ const todasAsParadas = () =>
 const rolarPara = (top, suave) =>
   window.scrollTo({ top, behavior: suave && !reduceMotion ? "smooth" : "instant" });
 
-const paradas = [...document.querySelectorAll("main section[data-rail]:not(#projects), #projects .card")];
+const paradas = [...document.querySelectorAll("main section[data-rail]:not(#projects), #projects .card, #projects .study")];
 const primeiroCard = document.querySelector("#projects .card");
 
 function rolarParaProjetos(suave) {

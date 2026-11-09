@@ -22,6 +22,41 @@ document.querySelectorAll("[data-copy]").forEach((btn) => {
   });
 });
 
+// "Ver projetos" / menu Projetos: rola para mostrar o card do Podengo INTEIRO e centralizado na área visível
+// (abaixo do cabeçalho). Se o card for maior que a tela, alinha no título "Projetos".
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function rolarParaProjetos(suave) {
+  const header = document.querySelector(".site-header");
+  const card = document.querySelector(".card--featured");
+  const titulo = document.querySelector("#projects .section-title");
+  if (!header || !card || !titulo) return;
+  const headerH = header.offsetHeight;
+  const area = window.innerHeight - headerH;
+  const cardTop = card.getBoundingClientRect().top + window.scrollY;
+  const tituloTop = titulo.getBoundingClientRect().top + window.scrollY;
+  const cabe = card.offsetHeight + 24 <= area;
+  const alvo = cabe ? cardTop - headerH - (area - card.offsetHeight) / 2 : tituloTop - headerH - 16;
+  window.scrollTo({ top: Math.max(0, alvo), behavior: suave && !reduceMotion ? "smooth" : "instant" });
+}
+
+document.querySelectorAll('a[href="#projects"]').forEach((a) => {
+  a.addEventListener("click", (e) => {
+    e.preventDefault();
+    history.pushState(null, "", "#projects");
+    rolarParaProjetos(true);
+  });
+});
+
+// Link direto com #projects: o navegador pula para o início da seção e pode reajustar quando fontes e imagens
+// carregam, então a centralização roda depois do carregamento (e uma vez mais, logo em seguida).
+if (location.hash === "#projects") {
+  window.addEventListener("load", () => {
+    requestAnimationFrame(() => rolarParaProjetos(false));
+    setTimeout(() => rolarParaProjetos(false), 250);
+  });
+}
+
 // Revelação ao rolar. Sem JS (ou sem IntersectionObserver) o conteúdo fica visível.
 const items = document.querySelectorAll(".reveal");
 

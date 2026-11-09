@@ -577,8 +577,14 @@ ul {
     flex-direction: row;
 
     .card-media {
-      flex: 0 0 54%;
+      flex: 0 0 44%;
       align-self: center;
+    }
+
+    // Compacta o texto para o card inteiro caber numa tela de notebook (a rolagem de #projects o centraliza).
+    .card-body {
+      gap: 0.7rem;
+      padding: 1.4rem 1.6rem;
     }
   }
 }
